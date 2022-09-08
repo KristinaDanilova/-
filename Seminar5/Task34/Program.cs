@@ -12,7 +12,7 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-int ChetNumber(int [] array)
+int ChetNumber(int[] array)
 {
     int[] result = new int[array.Length];
     int number = 0;
