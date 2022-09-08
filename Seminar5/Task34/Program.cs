@@ -18,7 +18,7 @@ int ChetNumber(int[] array)
     int number = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        int chet = array [i] % 2;
+        int chet = array[i] % 2;
         if (chet == 0)
         number++;
     }
