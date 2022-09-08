@@ -4,7 +4,7 @@
 
 int[] GetArray(int size, int minValue, int maxValue)
 {
-    int [] res = new int[size];
+    int[] res = new int[size];
     for (int i = 0; i < size; i++)
     {
         res[i] = new Random().Next(minValue, maxValue + 1);
@@ -14,13 +14,16 @@ int[] GetArray(int size, int minValue, int maxValue)
 
 int SumNumber(int[] array)
 {
-    int[] result = new int[array.Length];
-    int number = 0;
-    for (int i = 0; i < array.Length; i++)
+    int res = 0;
+    for (int i = 1; i < array.Length; i += 2)
     {
-        int chet = array [i] % 2;
-        if (chet == 0)
-        number++;
+        res += array[i];
     }
-    return number;
+    return res;
 }
+
+int[] myArray = GetArray(10, 1, 10);
+Console.WriteLine(String.Join(" ", myArray));
+
+int result = SumNumber(myArray);
+Console.WriteLine($"Сумма чисел на нечетных позициях: {result}");
