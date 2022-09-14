@@ -3,15 +3,15 @@
 
 int Num (int[] arr)
 {
-int count = 0; 
-for (int i = 0; i < arr.Length; i++)
-{
-    if (arr[i] > 0)
+    int count = 0; 
+    for (int i = 0; i < arr.Length; i++)
     {
-        count++;
+        if (arr[i] > 0)
+        {
+            count++;
+        }
     }
-}
-return count;
+    return count;
 }
 
 Console.Write("Сколько чисел необходимо ввести: ");
